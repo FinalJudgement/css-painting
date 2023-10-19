@@ -1,0 +1,164 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(4, 15, 52);
+}
+
+.moon {
+  position: relative;
+  top: 100px;
+  left: 200px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(236, 240, 196);
+  border-radius: 50%;
+}
+.crescent {
+  position: relative;
+  top: 0;
+  left: -5px;
+  width: 90px;
+  height: 90px;
+  background-color: rgb(4, 15, 52);
+  border-radius: 50%;
+}
+
+.crater {
+  position: relative;
+  transform: rotate(30deg);
+  top: -10px;
+  left: 75px;
+  height: 5px;
+  width: 5px;
+  background-color: rgb(161, 160, 127);
+  border-radius: 2px;
+}
+
+.clouds {
+  display: flex;
+  position: relative;
+  top: 50px;
+  left: 110px;
+  opacity: 0.8;
+  width: 100%;
+}
+
+.cloud {
+  display: flex;
+  width: 100%;
+  height: 300px;
+}
+.cloud2 {
+  display: flex;
+  position: relative;
+  left: 500px;
+  width: 100%;
+  height: 300px;
+  opacity: 0.8;
+}
+
+.piece1 {
+  position: relative;
+  top: -30px;
+  height: 20%;
+  width: 10%;
+  background-color: rgb(68, 67, 67);
+  border-radius: 50%;
+  left: 150px;
+}
+.piece2 {
+  position: relative;
+  left: 50px;
+  height: 20%;
+  width: 30%;
+  background-color: rgb(68, 67, 67);
+  border-radius: 50%;
+}
+.piece3 {
+  position: relative;
+  top: -30px;
+  left: -100px;
+  height: 20%;
+  width: 10%;
+  background-color: rgb(68, 67, 67);
+  border-radius: 50%;
+}
+
+.piece4 {
+  position: relative;
+  top: 20px;
+  left: -300px;
+  height: 20%;
+  width: 10%;
+  background-color: rgb(68, 67, 67);
+  border-radius: 50%;
+}
+.form-section {
+  position: absolute;
+  background-color: rgb(88, 88, 88);
+  padding: 20px;
+  width: 500px;
+  top: 50%;
+  left: 20px;
+  font-family: Arial, sans-serif;
+  color: white;
+  font-size: 1.2rem;
+  z-index: 4;
+}
+
+.grass {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(7, 58, 7);
+  bottom: 1px;
+}
+.grass1 {
+  position: absolute;
+  width: 70%;
+  height: 100px;
+  background-color: rgb(7, 58, 7);
+  bottom: 30px;
+  border-radius: 50%;
+  border: 3px solid black;
+  z-index: 1;
+}
+.grass2 {
+  position: absolute;
+  width: 40%;
+  height: 100px;
+  background-color: rgb(7, 58, 7);
+  bottom: 30px;
+  right: 0;
+  border-radius: 50%;
+  border: 3px solid black;
+  z-index: 2;
+}
+
+.cover-grass {
+  position: absolute;
+  width: 100%;
+  height: 90px;
+  background-color: rgb(7, 58, 7);
+  bottom: 1px;
+  z-index: 3;
+}
+
+@media only screen and (max-width: 1710px) {
+  .clouds {
+    flex-direction: column;
+  }
+  .cloud2 {
+    left: 200px;
+  }
+}
